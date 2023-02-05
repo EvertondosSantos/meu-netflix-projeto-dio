@@ -17,7 +17,7 @@ body{
     color: white;
     width: 100%;
     min-height: 100vh;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 h2{
     font-size: 3vw;
@@ -26,6 +26,8 @@ h2{
     display: flex;
 }
 
+
+/* FORMATANDO HEADER */
 header{
     height: 4.5vw;
     background-color: gray;
@@ -35,8 +37,7 @@ header{
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 0% auto;
+    margin: 0% 5vw;
 }
 .navMenu{
     width: 50%;
@@ -55,4 +56,31 @@ header{
     color: white;
 }
 /* ESTRUTURA PRINCIPAL DO HEADER CONCLUÍDA */
+
+
+main .fundoPrincipal{
+    height: 40vw;
+    background: url(/img/eONx2NqeLqexziFcZeyRXY0A3Is.jpg);
+    background-size: cover;
+
+}
+main .fundoPrincipal{
+    align-items: center;
+}
+main .informacaoPrincipal{
+    height: 50%;
+    flex-direction: column;
+    width: 45vw;
+    margin: 5vw;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+main p{
+    font-size: 1.5vw;
+}
+main .botoes button{
+    height: 2rem;
+}
+/* BOTOES E VIDEO NA PARTE 4 13:43  */
+
 
