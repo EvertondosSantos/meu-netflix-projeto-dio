@@ -13,7 +13,7 @@
 
 body{
     background-color: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     width: 100%;
     min-height: 100vh;
@@ -21,6 +21,7 @@ body{
 }
 h2{
     font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container{
     display: flex;
@@ -30,7 +31,7 @@ h2{
 /* FORMATANDO HEADER */
 header{
     height: 4.5vw;
-    background-color: gray;
+    background-color: rgb(60, 60, 60);
 }
 
 .principal{
@@ -40,28 +41,44 @@ header{
     margin: 0% 5vw;
 }
 .navMenu{
-    width: 50%;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
+    margin-right: 1vw;
     color: var(--vermelho);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .principal nav a{
     color: white;
     margin: 0% 0.3rem;
+    transition: 300ms;
 }
+.principal nav a:hover{
+    color: rgb(151, 151, 151);
+}
+
 .principal .navLogin a{
     color: white;
+    margin: 0% 0.5rem;
 }
+.principal .navLogin a:nth-child(3){
+    margin-right: 0;
+}
+.principal .navLogin a:nth-child(4){
+    margin-left: 0;
+}
+.principal .navLogin a:hover{
+    color: rgb(151, 151, 151);
+}
+
 /* ESTRUTURA PRINCIPAL DO HEADER CONCLUÍDA */
 
 
 main .fundoPrincipal{
     height: 40vw;
-    background: url(/img/eONx2NqeLqexziFcZeyRXY0A3Is.jpg);
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.100),rgba(0, 0, 0, 0.100) 100%), url(/img/eONx2NqeLqexziFcZeyRXY0A3Is.jpg);
+    background-size: cover; /* ESPECIFICAR O TAMANHO DA IMAGEM NO FUNDO*/
 
 }
 main .fundoPrincipal{
@@ -75,12 +92,41 @@ main .informacaoPrincipal{
     align-items: flex-start;
     justify-content: space-around;
 }
+main h2{
+    font-size: 3.5vw;
+}
+
 main p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 main .botoes button{
-    height: 2rem;
+    padding: 0.2rem 0.5rem ;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 1.1vw;
+    transition: 500ms;
+    
 }
-/* BOTOES E VIDEO NA PARTE 4 13:43  */
+main .botoes button:nth-child(1){
+    color: #141414;
+    background-color: white;
+}
+main .botoes button:nth-child(2){   /*ACESSAR CHILD NTH-CHIL(n) */
+    margin-left: 0.6rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(152, 152, 152, 0.8);
+}
+main .botoes button i{
+    margin-right: 0.2rem;
+}
+
+main .botoes button:hover{
+    color: white;
+    background-color: #141414;
+}
+
+/* CARROSSEL PARTE 7  */
+
 
 
