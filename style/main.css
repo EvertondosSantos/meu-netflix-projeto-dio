@@ -1,0 +1,58 @@
+:root{   /* Usar variaveis no css*/
+    --vermelho: #E50914;
+    --preta: #141414;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Itens limitados por seu "container" sem que os elementos empurrem essa borda */
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1vw;
+}
+h2{
+    font-size: 3vw;
+}
+.container{
+    display: flex;
+}
+
+header{
+    height: 4.5vw;
+    background-color: gray;
+}
+
+.principal{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0% auto;
+}
+.navMenu{
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: var(--vermelho);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.principal nav a{
+    color: white;
+    margin: 0% 0.3rem;
+}
+.principal .navLogin a{
+    color: white;
+}
+/* ESTRUTURA PRINCIPAL DO HEADER CONCLUÍDA */
+
